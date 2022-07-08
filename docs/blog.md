@@ -11,4 +11,4 @@ comment: false
 
 # 最近发布
 
-{{ blog_content }}
+{{ blog_content }

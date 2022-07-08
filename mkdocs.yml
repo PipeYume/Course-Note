@@ -95,9 +95,9 @@ theme:
 extra:
   generator: true
 
-site_name: YukariFans
-site_url: "https://guanyujie.gitee.io/yukarifans/"
+site_name: 课程笔记
+site_url: " https://PipeYume.github.io/Course-Note/"
 
-repo_url: https://github.com/PipeYume/Course-Note/YukariFans
+repo_url: https://github.com/PipeYume/Course-Note
 repo_name: PipeYume/Course-Note
-edit_uri: https://github.com/PipeYume/Course-Note/tree/main/YukariFans/docs
+edit_uri: https://github.com/PipeYume/tree/main/Course-Note/docs
