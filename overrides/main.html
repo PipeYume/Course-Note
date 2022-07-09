@@ -2,10 +2,6 @@
 
 {% extends "base.html" %}
 
-{% block announce %}
-最新更新 2022-6-17 20:01
-{% endblock %}
-
 {% block extrahead %}
   <!-- 不缓存 -->
   <!-- http 1.0 -->
@@ -25,7 +21,7 @@
 
   {% if not page.meta.comment == false %}
   <!-- 来必力City版安装代码 -->
-  <div id="lv-container" data-id="city" data-uid="MTAyMC81NjYwNC8zMzA2Nw==">
+  <div id="lv-container" data-id="city" data-uid="MTAyMC81Njc4Mi8zMzI0Ng==">
     <script type="text/javascript">
     (function(d, s) {
         var j, e = d.getElementsByTagName(s)[0];
@@ -42,6 +38,7 @@
   <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
   </div>
   <!-- City版安装代码已完成 -->
+
   {% endif %}
 
 {% endif %}
