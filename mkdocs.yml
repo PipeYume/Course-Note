@@ -96,8 +96,8 @@ extra:
   generator: true
 
 site_name: 课程笔记
-site_url: " https://PipeYume.github.io/Course-Note/"
+site_url: https://PipeYume.github.io/Course-Note
 
 repo_url: https://github.com/PipeYume/Course-Note
 repo_name: PipeYume/Course-Note
-edit_uri: https://github.com/PipeYume/tree/main/Course-Note/docs
+edit_uri: https://github.com/PipeYume/Course-Note/blob/main/docs
