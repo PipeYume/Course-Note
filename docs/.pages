@@ -1,4 +1,7 @@
 nav:
-  - 首页: index.md
-  - 最近: blogs.md
-  - 标签: tags.md
+  - 首页: 
+    - 介绍: index.md
+    - 标签: tags.md
+    - 最近: blogs.md
+  - 课程: cources.md
+  - ...
