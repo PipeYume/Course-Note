@@ -6,12 +6,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://PipeYume.github.io/Course-Note/blog/</loc>
+         <loc>https://PipeYume.github.io/Course-Note/blogs/</loc>
+         <lastmod>2022-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://PipeYume.github.io/Course-Note/cources/</loc>
          <lastmod>2022-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://PipeYume.github.io/Course-Note/tags/</loc>
+         <lastmod>2022-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://PipeYume.github.io/Course-Note/VE311%E6%A8%A1%E6%8B%9F%E7%94%B5%E8%B7%AF/2_MOSFET/</loc>
+         <lastmod>2022-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://PipeYume.github.io/Course-Note/VE311%E6%A8%A1%E6%8B%9F%E7%94%B5%E8%B7%AF/VE311/</loc>
+         <lastmod>2022-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://PipeYume.github.io/Course-Note/VE401%E6%A6%82%E7%8E%87%E8%AE%BA/VE401/</loc>
          <lastmod>2022-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
