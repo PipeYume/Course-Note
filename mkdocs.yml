@@ -14,16 +14,15 @@ plugins:
   # 其它md中[[别名]]指向该.md
   - blogging: #生成博客页
       dirs: # The directories to be included
-        - help
-        - basic-info
-        - techniques
+        - VE311模拟电路
+        - VE401概率论
       features: 
         tags: {} # 包含页面标签,标签需要手动加到md文档顶部元数据
       theme:
         name: card
       meta_time_format: '%Y-%m-%d %H:%M:%S' #解析格式, 会自动找到元数据time或date上的字符串
       time_format: '%Y年%m月%d日 %H时%M分' #输出格式
-  - tooltips #增加提示信息，参考文档 https://roipoussiere.frama.io/mkdocs-tooltips/installation/
+  # - tooltips #增加提示信息，参考文档 https://roipoussiere.frama.io/mkdocs-tooltips/installation/
 markdown_extensions:
   - toc:
       toc_depth: 4 #目录仅收录前四级标题
@@ -85,9 +84,11 @@ theme:
   language: zh
   features:
     - navigation.tracking #锚点跟踪
-    - navigation.expand #侧栏自动展开
+    # - navigation.expand #侧栏自动展开
     - navigation.top #返回顶部按钮
     - navigation.tabs #顶部导航
+    - navigation.tabs.hide: #在导航中隐藏特定前缀的一级标题
+        - "."
     - search.highlight #进入搜索的文章后使搜索文本高亮
     - header.autohide #滑下后自动隐藏标题
     # - navigation.instant #即时加载，点击内部链接后只加载改变的部分，与blog插件冲突

@@ -1,0 +1,28 @@
+{% set class = "" %}
+<nav class="md-tabs" aria-label="{{ lang.t('tabs.title') }}" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+    <!-- jinja2 for循环作用域里set只能在for循环里用，所以创建一个namespace来让for循环外也能使用for循环里set的变量(在这里是hidenPrefix和isHiden) -->
+    {% with tab_space = namespace(hidenPrefix=[],isHiden=false) -%}
+        {% for feature in  features %}
+            {% if feature["navigation.tabs.hide"] %}
+                {% set tab_space.hidenPrefix = feature["navigation.tabs.hide"] %}
+            {% endif %}
+        {% endfor %}
+        
+        {% for nav_item in nav %}
+            {% set tab_space.isHiden = false %}
+            {% for hidenTitle in tab_space.hidenPrefix %}
+                {% if nav_item.title.startswith(hidenTitle) %}
+                    {% set tab_space.isHiden = true %}
+                {% endif %}
+            {% endfor %}
+
+            {% if not tab_space.isHiden %}
+                {% include "partials/tabs-item.html" %}
+            {% endif %}
+        {% endfor %}
+    {% endwith %}
+    </ul>
+</div>
+</nav>
