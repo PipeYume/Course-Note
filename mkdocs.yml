@@ -1,6 +1,4 @@
 plugins:
-  - tags:
-      tags_file: tags.md
   - search:
       separator: '[\s\-\.]+'
       lang:
@@ -8,6 +6,8 @@ plugins:
         - ja
   - pico-8
   - awesome-pages #通过.pages文件来配置navigation
+  - tags:
+      tags_file: tags.md
   # - section-index #让nav的标题也可附加一个md文档
   - autolinks #让站内链接不用写绝对路径,直接写xxx就行了。(如果有重名文件可能有问题)
   - alias #允许给.md添加别名(用于引用)eg. ```alias: \r\n  name:a\r\ntext: this is a```

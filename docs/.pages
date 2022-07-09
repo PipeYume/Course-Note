@@ -1,0 +1,4 @@
+nav:
+  - 首页: index.md
+  - 最近: blogs.md
+  - 标签: tags.md

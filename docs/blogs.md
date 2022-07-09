@@ -1,7 +1,7 @@
 ---
 alias: 
-  name: 最近发布
-  text: 最近发布
+  name: 最近
+  text: 最近
 hide:
   - tags
   - navigation
@@ -9,6 +9,6 @@ hide:
 comment: false
 ---
 
-# 最近发布
+# 最近
 
 {{ blog_content }
