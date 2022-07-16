@@ -1,0 +1,1519 @@
+<!-- 这里用于覆盖MKdocs Material的各种块 -->
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="正交">
+      
+      
+      
+        <link rel="canonical" href="https://PipeYume.github.io/Course-Note/VE214%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/Orthogon/">
+      
+      <link rel="icon" href="../../images/favicon.jpg">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.16">
+    
+    
+      
+        <title>Orthogon 正交 - 课程笔记</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1c3799f8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+Simplified+Chinese:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Serif Simplified Chinese";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+      <link rel="stylesheet" href="../../assets/css/footer.css">
+    
+      <link rel="stylesheet" href="../../assets/css/hint.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <!-- 不缓存 -->
+  <!-- http 1.0 -->
+  <meta http-equiv="pragma" content="no-cache" />
+  <!-- http 1.1 -->
+  <meta http-equiv="content-type" content="no-cache, must-revalidate" />
+  <!-- http 1.0 -->
+  <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT" />
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#orthogon" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="课程笔记" class="md-header__button md-logo" aria-label="课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 14.5a.898.898 0 0 0-1 1c0 .67-1 .67-1 0v-2.3l1.7-.5c.72-.34 1.21-1.02 1.3-1.8C20.5 5.5 16.7 2 12 2s-8.5 3.5-8.5 8.9c.06.8.56 1.5 1.3 1.8l1.7.5v2.3a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.898.898 0 0 0-1-1 .898.898 0 0 0-1 1A2.394 2.394 0 0 0 6 18c1.41.06 2.56-1.09 2.5-2.5v-1.8h1v5.7c0 .67-1 .67-1 0a.898.898 0 0 0-1-1 .898.898 0 0 0-1 1A2.4 2.4 0 0 0 9 22c1.41.06 2.56-1.09 2.5-2.5V14h1v5.5A2.394 2.394 0 0 0 15 22c1.41.06 2.56-1.09 2.5-2.5 0-1.33-2-1.33-2 0 0 .67-1 .67-1 0v-5.7h1v1.8c0 1.36 1.13 2.46 2.5 2.4 1.41.06 2.56-1.09 2.5-2.5a.898.898 0 0 0-1-1m-8.9-9.8A5.566 5.566 0 0 0 7 7.3c-.17.2-.5.27-.7.1a.507.507 0 0 1-.1-.7 6.904 6.904 0 0 1 4.2-3c.27-.02.51.15.6.4.06.27-.12.55-.4.6Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            课程笔记
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Orthogon 正交
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/PipeYume/Course-Note" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    PipeYume/Course-Note
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+    <!-- jinja2 for循环作用域里set只能在for循环里用，所以创建一个namespace来让for循环外也能使用for循环里set的变量(在这里是hidenPrefix和isHiden) -->
+    
+            
+        
+            
+        
+            
+        
+            
+                
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+            
+                
+            
+
+            
+                
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+        首页
+    </a>
+    </li>
+
+
+  
+            
+
+        
+            
+            <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+            
+                
+            
+
+            
+                
+
+
+
+
+<li class="md-tabs__item">
+    <a href="../../cources/" class="md-tabs__link">
+    课程
+    </a>
+</li>
+
+  
+            
+
+        
+            
+            <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+            
+                
+                    
+                
+            
+
+            
+
+        
+            
+            <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+            
+                
+                    
+                
+            
+
+            
+
+        
+            
+            <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+            
+                
+                    
+                
+            
+
+            
+
+        
+    
+    </ul>
+</div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="课程笔记" class="md-nav__button md-logo" aria-label="课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 14.5a.898.898 0 0 0-1 1c0 .67-1 .67-1 0v-2.3l1.7-.5c.72-.34 1.21-1.02 1.3-1.8C20.5 5.5 16.7 2 12 2s-8.5 3.5-8.5 8.9c.06.8.56 1.5 1.3 1.8l1.7.5v2.3a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.898.898 0 0 0-1-1 .898.898 0 0 0-1 1A2.394 2.394 0 0 0 6 18c1.41.06 2.56-1.09 2.5-2.5v-1.8h1v5.7c0 .67-1 .67-1 0a.898.898 0 0 0-1-1 .898.898 0 0 0-1 1A2.4 2.4 0 0 0 9 22c1.41.06 2.56-1.09 2.5-2.5V14h1v5.5A2.394 2.394 0 0 0 15 22c1.41.06 2.56-1.09 2.5-2.5 0-1.33-2-1.33-2 0 0 .67-1 .67-1 0v-5.7h1v1.8c0 1.36 1.13 2.46 2.5 2.4 1.41.06 2.56-1.09 2.5-2.5a.898.898 0 0 0-1-1m-8.9-9.8A5.566 5.566 0 0 0 7 7.3c-.17.2-.5.27-.7.1a.507.507 0 0 1-.1-.7 6.904 6.904 0 0 1 4.2-3c.27-.02.51.15.6.4.06.27-.12.55-.4.6Z"/></svg>
+
+    </a>
+    课程笔记
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/PipeYume/Course-Note" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    PipeYume/Course-Note
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    <!-- jinja2 for循环作用域里set只能在for循环里用，所以创建一个namespace来让for循环外也能使用for循环里set的变量(在这里是hidenPrefix和isHiden) -->
+    
+            
+        
+            
+        
+            
+        
+            
+                
+            
+        
+            
+        
+            
+        
+        
+        
+          
+          <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+          
+              
+          
+
+          
+          
+          
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        
+        <label class="md-nav__link" for="__nav_1">
+          首页
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+        
+      
+      <nav class="md-nav" aria-label="首页" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          首页
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        介绍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        标签
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blogs/" class="md-nav__link">
+        最近
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+        
+          
+          <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+          
+              
+          
+
+          
+          
+          
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cources/" class="md-nav__link">
+        课程
+      </a>
+    </li>
+  
+
+        
+          
+          <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+          
+              
+                  
+              
+          
+
+          
+          
+          
+
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        
+      
+      <nav class="md-nav" aria-label=".VE214离散数学" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          .VE214离散数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VE214/" class="md-nav__link">
+        VE214介绍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Orthogon 正交
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Orthogon 正交
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#norm" class="md-nav__link">
+    Norm 范数
+  </a>
+  
+    <nav class="md-nav" aria-label="Norm 范数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normed-linear-space" class="md-nav__link">
+    Normed linear space 赋范向量空间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convergence" class="md-nav__link">
+    Convergence 赋范向量空间中的收敛
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-norms" class="md-nav__link">
+    Operator Norms 算子范数
+  </a>
+  
+    <nav class="md-nav" aria-label="Operator Norms 算子范数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bounded" class="md-nav__link">
+    Bounded 有界
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inner-product" class="md-nav__link">
+    Inner Product 内积
+  </a>
+  
+    <nav class="md-nav" aria-label="Inner Product 内积">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    例子
+  </a>
+  
+    <nav class="md-nav" aria-label="例子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-cauchy-schwarz-inequality" class="md-nav__link">
+    The Cauchy-Schwarz Inequality 柯西不等式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#natural-norm" class="md-nav__link">
+    Natural Norm 自然范数(内积定义的范数)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cauchy-sequence" class="md-nav__link">
+    Cauchy Sequence 柯西序列
+  </a>
+  
+    <nav class="md-nav" aria-label="Cauchy Sequence 柯西序列">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    完备性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#orthonormality" class="md-nav__link">
+    Orthonormality 正交性
+  </a>
+  
+    <nav class="md-nav" aria-label="Orthonormality 正交性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orthogonal" class="md-nav__link">
+    orthogonal 正交
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orthogonormal" class="md-nav__link">
+    orthogonormal 标准正交
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pythagorean-theorem" class="md-nav__link">
+    Pythagorean Theorem 毕达哥拉斯定理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    正交分解定理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orthonormal-basis" class="md-nav__link">
+    Orthonormal Basis 正交基
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orthogonal-complement" class="md-nav__link">
+    Orthogonal Complement 正交补空间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gram-schmidt-theorem" class="md-nav__link">
+    Gram-Schmidt Theorem (基的正交化)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qr-factorization" class="md-nav__link">
+    QR-factorization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#least-squares-solution" class="md-nav__link">
+    Least-squares solution 最小二乘解
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correlation" class="md-nav__link">
+    Correlation 相关性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+        
+          
+          <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+          
+              
+                  
+              
+          
+
+          
+          
+          
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        
+      
+      <nav class="md-nav" aria-label=".VE311模拟电路" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          .VE311模拟电路
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VE311%E6%A8%A1%E6%8B%9F%E7%94%B5%E8%B7%AF/VE311/" class="md-nav__link">
+        VE311介绍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VE311%E6%A8%A1%E6%8B%9F%E7%94%B5%E8%B7%AF/2_MOSFET/" class="md-nav__link">
+        MOSFET
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+        
+          
+          <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+          
+              
+                  
+              
+          
+
+          
+          
+          
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        
+      
+      <nav class="md-nav" aria-label=".VE401概率论" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          .VE401概率论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VE401%E6%A6%82%E7%8E%87%E8%AE%BA/VE401/" class="md-nav__link">
+        VE401介绍
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+        
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#norm" class="md-nav__link">
+    Norm 范数
+  </a>
+  
+    <nav class="md-nav" aria-label="Norm 范数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normed-linear-space" class="md-nav__link">
+    Normed linear space 赋范向量空间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convergence" class="md-nav__link">
+    Convergence 赋范向量空间中的收敛
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-norms" class="md-nav__link">
+    Operator Norms 算子范数
+  </a>
+  
+    <nav class="md-nav" aria-label="Operator Norms 算子范数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bounded" class="md-nav__link">
+    Bounded 有界
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inner-product" class="md-nav__link">
+    Inner Product 内积
+  </a>
+  
+    <nav class="md-nav" aria-label="Inner Product 内积">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    例子
+  </a>
+  
+    <nav class="md-nav" aria-label="例子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-cauchy-schwarz-inequality" class="md-nav__link">
+    The Cauchy-Schwarz Inequality 柯西不等式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#natural-norm" class="md-nav__link">
+    Natural Norm 自然范数(内积定义的范数)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cauchy-sequence" class="md-nav__link">
+    Cauchy Sequence 柯西序列
+  </a>
+  
+    <nav class="md-nav" aria-label="Cauchy Sequence 柯西序列">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    完备性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#orthonormality" class="md-nav__link">
+    Orthonormality 正交性
+  </a>
+  
+    <nav class="md-nav" aria-label="Orthonormality 正交性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orthogonal" class="md-nav__link">
+    orthogonal 正交
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orthogonormal" class="md-nav__link">
+    orthogonormal 标准正交
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pythagorean-theorem" class="md-nav__link">
+    Pythagorean Theorem 毕达哥拉斯定理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    正交分解定理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orthonormal-basis" class="md-nav__link">
+    Orthonormal Basis 正交基
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orthogonal-complement" class="md-nav__link">
+    Orthogonal Complement 正交补空间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gram-schmidt-theorem" class="md-nav__link">
+    Gram-Schmidt Theorem (基的正交化)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qr-factorization" class="md-nav__link">
+    QR-factorization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#least-squares-solution" class="md-nav__link">
+    Least-squares solution 最小二乘解
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correlation" class="md-nav__link">
+    Correlation 相关性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+  
+                
+  <a href="https://github.com/PipeYume/Course-Note/blob/main/docs/VE214离散数学/Orthogon.md" title="编辑此页" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+  
+
+
+
+<h1 id="orthogon">Orthogon 正交</h1>
+<h2 id="norm">Norm 范数</h2>
+<ul>
+<li>
+<p>令 <span class="arithmatex">\(X\)</span> 为Scalar field <span class="arithmatex">\(\mathbb{K}\)</span>上的 linear space.</p>
+</li>
+<li>
+<p><strong>范数</strong> 是一个映射 <span class="arithmatex">\(\Vert\cdot\Vert:X\rightarrow\mathbb{R}\)</span>, 满足以下性质:</p>
+<ul>
+<li><span class="arithmatex">\(1.\forall x\in X,\quad\Vert x\Vert&gt;0;\ \Vert x\Vert=0\Leftrightarrow x=0\)</span></li>
+<li><span class="arithmatex">\(2.\forall x\in X\ \forall\alpha \in\mathbb{K},\quad\Vert\alpha x\Vert=|\alpha|\Vert x\Vert\)</span></li>
+<li><span class="arithmatex">\(3.\forall x,y\in X,\quad\Vert x+y \Vert \leq \Vert x\Vert+\Vert y\Vert\)</span></li>
+</ul>
+</li>
+</ul>
+<h3 id="normed-linear-space">Normed linear space 赋范向量空间</h3>
+<ul>
+<li>
+<p><strong>赋范向量空间</strong>:</p>
+<p>A linear space with a norm <span class="arithmatex">\((X,\Vert \cdot \Vert)\)</span></p>
+</li>
+</ul>
+<h3 id="convergence">Convergence 赋范向量空间中的收敛</h3>
+<ul>
+<li>
+<p><span class="arithmatex">\({x_n}\rightarrow x\ as\ n\rightarrow \infty\)</span></p>
+<p><span class="arithmatex">\(\Rightarrow\Vert x_n-x\Vert\rightarrow 0\ as\ n\rightarrow\infty\)</span></p>
+</li>
+<li>
+<p>或者, <span class="arithmatex">\(\forall \epsilon&gt;0,\exists N_0\in \mathbb{N},\forall n&gt;N_0 |\Vert x_n-x\Vert|&lt;\epsilon\)</span></p>
+</li>
+</ul>
+<h3 id="operator-norms">Operator Norms 算子范数</h3>
+<ul>
+<li>令 <span class="arithmatex">\(X,Y\)</span> 为赋范向量空间, 令 <abbr title="T(ax+by)=aTx+bTy">线性映射</abbr> <span class="arithmatex">\(T\in L(X,Y)\)</span></li>
+<li>定义对于 <span class="arithmatex">\(\forall T_1,T_2\in L(X,Y)\)</span><ul>
+<li><span class="arithmatex">\((T_1+T_2)(x)=T_1x+T_2x\)</span></li>
+<li><span class="arithmatex">\((\alpha T)(x)=\alpha Tx\)</span></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><span class="arithmatex">\(L(X,Y)\)</span> is a linear space of all linear operators <span class="arithmatex">\(T:X\rightarrow Y\)</span></p>
+</blockquote>
+<ul>
+<li>
+<p><strong>算子范数</strong>定义在<span class="arithmatex">\(T\)</span>上:</p>
+<p><span class="arithmatex">\(\Vert T\Vert=\sup_{x\in X:\Vert x\Vert_X\leq 1}\Vert Tx\Vert_Y\)</span></p>
+<p>或者, <span class="arithmatex">\(\Vert T\Vert=\sup_{x\in X: x\neq 0}\frac{\Vert Tx\Vert_Y}{\Vert x\Vert_X}\)</span></p>
+<blockquote>
+<p><span class="arithmatex">\(sup\)</span>:上确界</p>
+</blockquote>
+<ul>
+<li><span class="arithmatex">\(1.\forall T\in L(X,Y),\quad\Vert T\Vert\geq0;\ \Vert T\Vert\Leftrightarrow T=0\)</span></li>
+<li><span class="arithmatex">\(2.\forall\alpha \in\mathbb{K},\quad\Vert\alpha T\Vert=|\alpha|\Vert T\Vert\)</span></li>
+<li><span class="arithmatex">\(3.\forall T_1,T_2\in L(X,Y),\quad \Vert T_1+T_2\Vert\leq\Vert T_1\Vert+\Vert T_2\Vert\)</span></li>
+</ul>
+</li>
+</ul>
+<h4 id="bounded">Bounded 有界</h4>
+<ul>
+<li><span class="arithmatex">\(T\in L(X,Y)有界: \Vert T\Vert&lt;+\infty\)</span></li>
+<li>定理: </li>
+</ul>
+<div class="arithmatex">\[T\in L(X,Y)有界\Leftrightarrow \exists C&gt;0,\forall x\in X, \Vert Tx\Vert_Y\leq C\cdot\Vert x\Vert_X\quad\&amp;\&amp;\ \inf\ C=\Vert T\Vert\]</div>
+<blockquote>
+<p><span class="arithmatex">\(inf\)</span>指下确界. 这里即<span class="arithmatex">\(\Vert T\Vert\leq C\)</span></p>
+</blockquote>
+<h2 id="inner-product">Inner Product 内积</h2>
+<ul>
+<li>
+<p>令 <span class="arithmatex">\(X\)</span> 为Scalar field <span class="arithmatex">\(\mathbb{K}\)</span>上的 linear space.</p>
+</li>
+<li>
+<p>内积: <span class="arithmatex">\((\cdot,\cdot):X\times X\rightarrow\mathbb{C}\)</span>, 满足以下性质</p>
+<ul>
+<li><span class="arithmatex">\(1.\forall x\in X,\quad (x,x)\geq 0; (x,x)=0\Leftrightarrow x=0\)</span></li>
+<li><span class="arithmatex">\(2.\forall x,y,z\in X\ \forall\alpha,\beta\in\mathbb{K},\quad (\alpha x+\beta y,z)=\alpha(x,z)+\beta(y,z)\)</span></li>
+<li><span class="arithmatex">\(3.\forall x,y\in X,\quad (x,y)=\overline{(y,x)}\)</span></li>
+</ul>
+</li>
+</ul>
+<h3 id="_1">例子</h3>
+<ul>
+<li>1.<span class="arithmatex">\(\mathbb{R}^n:(\overline{x},\overline{y})=\sum^{n}_{i=1}x_iy_i\)</span></li>
+<li>
+<p>2.<span class="arithmatex">\(C[a,b]:(f(t),g(t))=\int_a^{b}f(t)g(t)dt\)</span></p>
+<blockquote>
+<p><span class="arithmatex">\(C[a,b]\)</span>: 所有(a,b)上的连续函数组成的线性空间</p>
+</blockquote>
+</li>
+<li>
+<p>3.Frobenius inner product: <span class="arithmatex">\(M_{n\times n}(\mathbb{C}):(A,B)=tr(\bar{A}^T B)\)</span></p>
+</li>
+</ul>
+<h4 id="the-cauchy-schwarz-inequality">The Cauchy-Schwarz Inequality 柯西不等式</h4>
+<div class="arithmatex">\[\forall x,y\in X,\quad |(x,y)|\leq\sqrt{(x,x)}\cdot\sqrt{(y,y)}\]</div>
+<ul>
+<li>三角不等式</li>
+</ul>
+<div class="arithmatex">\[\forall x,y\in X,\quad |(x,y)|\leq\Vert x\Vert+\Vert y\Vert\]</div>
+<h4 id="natural-norm">Natural Norm 自然范数(内积定义的范数)</h4>
+<div class="arithmatex">\[\forall x\in X,\quad \Vert x\Vert=\sqrt{(x,x)}\]</div>
+<details class="question">
+<summary>例子</summary>
+<ul>
+<li><a href="#_5">前文</a>举了<span class="arithmatex">\(R^n\)</span> 和 <span class="arithmatex">\(C[a,b]\)</span> 上的内积的例子, 其对应的自然范数是什么呢?
+<center>
+<p class="heimu" markdown><span class="arithmatex">\(\mathbb{R}^n: \Vert x\Vert=\left(\sum^n_{i=1}|x_i|^2\right)^{1/2}\)</span></p>
+<p class="heimu" markdown><span class="arithmatex">\(C[a,b]: \Vert f\Vert=\left(\int_a^{b}f^2(t)dt\right)^{1/2}\)</span></p>
+</center></li>
+</ul>
+</details>
+<ul>
+<li>
+<p>Parallelogram Equality 判断是否为自然范数:</p>
+<div class="arithmatex">\[\Vert x+y\Vert^2+\Vert x-y\Vert^2=2(\Vert x\Vert^2+\Vert y\Vert^2)\]</div>
+</li>
+</ul>
+<h2 id="cauchy-sequence">Cauchy Sequence 柯西序列</h2>
+<ul>
+<li><span class="arithmatex">\(\{x_n\}\)</span> 是<span class="arithmatex">\(X\)</span>中的一个序列</li>
+<li>
+<p>柯西序列需要满足:</p>
+<div class="arithmatex">\[\Vert x_n-x_m\Vert\rightarrow 0\ as\ m,n \rightarrow\infty\]</div>
+</li>
+</ul>
+<h3 id="_2">完备性</h3>
+<ul>
+<li>A normed linear space <span class="arithmatex">\(X\)</span> is said to be complete if any Cauchy sequency converges with respect to a norm in <span class="arithmatex">\(X\)</span>.</li>
+<li>
+<p>完备空间中任意柯西序列都收敛到<span class="arithmatex">\(x\in X\)</span></p>
+</li>
+<li>
+<p>完备空间例子</p>
+</li>
+</ul>
+<p><center><img src="https://s2.loli.net/2022/07/16/JPg6Mju4xUX1Oos.png"style="zoom:0.6"/></center></p>
+<h2 id="orthonormality">Orthonormality 正交性</h2>
+<h3 id="orthogonal">orthogonal 正交</h3>
+<ul>
+<li><span class="arithmatex">\(x,y\in\)</span> 线性空间 <span class="arithmatex">\(X\)</span>, <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> are orthogonal <span class="arithmatex">\(\Leftrightarrow(x,y)=0\)</span></li>
+</ul>
+<h3 id="orthogonormal">orthogonormal 标准正交</h3>
+<ul>
+<li>
+<p><span class="arithmatex">\(x,y\in X\)</span>, <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> are orthogonormal <span class="arithmatex">\(\Leftrightarrow(x,y)=0\)</span> and <span class="arithmatex">\(\Vert x\Vert=\Vert y\Vert=1\)</span></p>
+</li>
+<li>
+<p>例子</p>
+</li>
+</ul>
+<div class="arithmatex">\[R^2:\binom{cos\theta}{sin\theta},\binom{-sin\theta}{cos\theta}\]</div>
+<div class="arithmatex">\[C[-\pi,\pi]:\frac{1}{\sqrt{2\pi}},\frac{1}{\sqrt{\pi}}cost,\frac{1}{\sqrt{\pi}}sint,\frac{1}{\sqrt{\pi}}cos2t,\frac{1}{\sqrt{\pi}}sin2t,\dotsm\]</div>
+<h3 id="pythagorean-theorem">Pythagorean Theorem 毕达哥拉斯定理</h3>
+<ul>
+<li>对于正交的<span class="arithmatex">\(x,y\in X\)</span></li>
+</ul>
+<div class="arithmatex">\[\Vert x+y \Vert^2=\Vert x \Vert^2+\Vert y \Vert^2\]</div>
+<h3 id="_3">正交分解定理</h3>
+<ul>
+<li>
+<p>对于<span class="arithmatex">\(x,y\in X\)</span> and <span class="arithmatex">\(y\neq 0\)</span>,</p>
+<p><span class="arithmatex">\(x=cy+w\)</span></p>
+<blockquote>
+<p><span class="arithmatex">\((w,y)=0\)</span>, <span class="arithmatex">\(c=\frac{(x,y)}{\Vert y\Vert^2}\)</span></p>
+</blockquote>
+</li>
+<li>
+<p>即<span class="arithmatex">\(x\)</span>可以分解为两个正交的向量 <span class="arithmatex">\(cy=\frac{(x,y)}{\Vert y\Vert^2}y\)</span>和 <span class="arithmatex">\(w=x-\frac{(x,y)}{\Vert y\Vert^2}y\)</span></p>
+</li>
+</ul>
+<h3 id="orthonormal-basis">Orthonormal Basis 正交基</h3>
+<ul>
+<li>Any <span class="arithmatex">\(n\)</span> orthonormal vectors <span class="arithmatex">\(\bar{u}_1,\dots,\bar{u}_n\in \mathbb{R}^n\)</span> form a basis of <span class="arithmatex">\(\mathbb{R}^n\)</span></li>
+</ul>
+<h3 id="orthogonal-complement">Orthogonal Complement 正交补空间</h3>
+<ul>
+<li>
+<p>Let <span class="arithmatex">\(V\subset X\)</span> be a linear subspace</p>
+<p>其正交补空间为</p>
+</li>
+</ul>
+<div class="arithmatex">\[V^\perp = \{x\in X:(x,v)=0\ \forall v\in V\}\]</div>
+<ul>
+<li>
+<p><span class="arithmatex">\(X=V\oplus V^\perp\)</span></p>
+<p><span class="arithmatex">\(V\cap V^\perp=\{0\}\)</span></p>
+<p><span class="arithmatex">\(V=(V^\perp)^\perp\)</span></p>
+<p><span class="arithmatex">\(dimX=dimV^\perp+dimV\)</span></p>
+<p><span class="arithmatex">\(proj_v\overline{x}=(\overline{x},\overline{u}_1)\overline{u}_1+\dots+(\overline{x},\overline{u}_m)\overline{u}_m\)</span></p>
+</li>
+</ul>
+<h3 id="gram-schmidt-theorem">Gram-Schmidt Theorem (基的正交化)</h3>
+<ul>
+<li>
+<p><span class="arithmatex">\(\{\overline{v}_1,\dots,\overline{v}_m\}\)</span> 是 <span class="arithmatex">\(V\subset \mathbb{R}^n\)</span> 的一组基.</p>
+</li>
+<li>
+<p>令 <span class="arithmatex">\(\overline{v}_j=\overline{v}_j^\Vert+\overline{v}_j^\perp\)</span></p>
+<p><span class="arithmatex">\(\overline{v}_j^\Vert\Vert span(\overline{v}_1,\dots,\overline{v}_{j-1})\)</span></p>
+<p><span class="arithmatex">\(\overline{v}_j^\perp\perp span(\overline{v}_1,\dots,\overline{v}_{j-1})\)</span></p>
+</li>
+<li>
+<p>Then, <span class="arithmatex">\(V\)</span>的一组正交基为<span class="arithmatex">\(\{\overline{u}_1,\dots,\overline{u}_m\}\)</span>:</p>
+<p><span class="arithmatex">\(\overline{u}_1=\frac{\overline{v}_1}{\Vert \overline{v}_1\Vert}\)</span></p>
+<p><span class="arithmatex">\(\overline{u}_i=\frac{\overline{v}_i^\perp}{\Vert \overline{v}_i^\perp\Vert}\)</span> (<span class="arithmatex">\(i&gt;1\)</span>)</p>
+</li>
+<li>
+<p>例子</p>
+<p><span class="arithmatex">\(V=span(\overline{v}_1,\overline{v}_2,\overline{v}_3)\)</span></p>
+<p><span class="arithmatex">\(\overline{u}_1=\frac{\overline{v}_1}{\Vert \overline{v}_1 \Vert}\)</span></p>
+<p><span class="arithmatex">\(\overline{u}_2=\frac{\overline{u}_2^{'}}{\Vert \overline{u}_2^{'} \Vert},\ \overline{u}_2^{'}=\overline{v}_1-(\overline{v}_2,\overline{u}_1)\overline{u}_1\)</span></p>
+<p><span class="arithmatex">\(\overline{u}_3=\frac{\overline{u}_3^{'}}{\Vert \overline{u}_3^{'} \Vert},\ \overline{u}_3^{'}=\overline{v}_3-proj_E\overline{v}_3=\overline{v}_3-(\overline{v}_3,\overline{u}_1)\overline{u}_1-(\overline{v}_3,\overline{u}_2)\overline{u}_2\)</span></p>
+</li>
+</ul>
+<h3 id="qr-factorization">QR-factorization</h3>
+<ul>
+<li>若矩阵<span class="arithmatex">\(M_{n\times m}\)</span> 的各个列向量<span class="arithmatex">\(\overline{v}_1,\dots,\overline{v}_m\)</span>线性独立, 那么存在一个其各个列向量<span class="arithmatex">\(\overline{u}_1,\dots,\overline{u}_m\)</span> 正交的矩阵<span class="arithmatex">\(Q_{n\times m}\)</span>, 和一个对角线项都为正数的 upper triangular matrix <span class="arithmatex">\(R\)</span> :</li>
+</ul>
+<div class="arithmatex">\[M=QR\]</div>
+<ul>
+<li>
+<p><span class="arithmatex">\(\forall j&gt;2\quad \overline{v}_j^\perp=\overline{v}_j-(\overline{v}_j,\overline{u}_1)\overline{u}_1-\dots-(\overline{v}_j,\overline{u}_{j-1})\overline{u}_{j-1},\quad \overline{v}_j^\perp=\Vert \overline{v}_j^\perp\Vert \overline{u}_j\)</span></p>
+<p><span class="arithmatex">\(\overline{v}_j=\sum_{i=1}^{j-1}(\overline{u}_i,\overline{v}_j)\overline{u}_i+\Vert \overline{v}_j^\perp\Vert \overline{u}_j^\perp\)</span></p>
+</li>
+</ul>
+<div class="arithmatex">\[R=(r_{ij})=\left\{\begin{matrix}
+(\overline{u}_i,\overline{v}_j)\qquad &amp;i&lt;j
+\\ 0 \qquad &amp;i&gt;j
+\\ \Vert \overline{v}_j^\perp \Vert \qquad &amp;i=j,\ j&gt;2
+\\ \Vert \overline{v}_1 \Vert \qquad &amp;i=j=1
+\end{matrix}\right.\]</div>
+<ul>
+<li>例子</li>
+</ul>
+<p><span class="arithmatex">\(M=\begin{pmatrix}0 &amp;-3  &amp;0 \\0  &amp;0  &amp;0 \\2  &amp;0  &amp;0 \\0  &amp;0  &amp;4 \end{pmatrix}=
+\begin{pmatrix}0 &amp;-1  &amp;0 \\0  &amp;0  &amp;0 \\1 &amp;0  &amp;0 \\0  &amp;0  &amp;1 \end{pmatrix}
+\begin{pmatrix}2 &amp;0  &amp;0 \\0 &amp;3 &amp;0 \\0  &amp;0  &amp;4 \end{pmatrix}\)</span></p>
+<p><span class="arithmatex">\(M=\begin{pmatrix}2 &amp;2 \\1 &amp;7 \\-2 &amp;-8 \end{pmatrix}
+=\begin{pmatrix}2/3 &amp;-2/3 \\1/3 &amp;2/3 \\-2/3 &amp;-1/3 \end{pmatrix}
+\begin{pmatrix}3 &amp;9 \\0 &amp;6 \end{pmatrix}\)</span></p>
+<h3 id="least-squares-solution">Least-squares solution 最小二乘解</h3>
+<ul>
+<li>
+<p>Let a system <span class="arithmatex">\(A\overline{x}=\overline{b}\)</span> be inconsistent</p>
+<blockquote>
+<p>If a system of equations has no solutions, then it is inconsistent.</p>
+</blockquote>
+</li>
+<li>
+<p>Then we want to find an approximate solution <span class="arithmatex">\(\overline{x}^{*}\)</span> such that <span class="arithmatex">\(\Vert A\overline{x}-\overline{b} \Vert\)</span> attains its minimum.</p>
+</li>
+<li>
+<p>定义: A vector <span class="arithmatex">\(\overline{x}^{*}\in \mathbb{R}^n\)</span> 是system <span class="arithmatex">\(A_{n\times m}\overline{x}=\overline{b}\)</span> 的最小二乘解 if</p>
+</li>
+</ul>
+<div class="arithmatex">\[\Vert A\overline{x}^{*}-\overline{b} \Vert\leq \Vert A\overline{x}-\overline{b} \Vert for\forall \overline{x}\in\mathbb{R}^n\]</div>
+<blockquote>
+<ul>
+<li>对于consistent system, <span class="arithmatex">\(\Vert A\overline{x}-\overline{b} \Vert=0\)</span></li>
+<li><span class="arithmatex">\(A\overline{x}^{*}=proj_{ImA}\overline{b}\)</span></li>
+<li>最小二乘解是<span class="arithmatex">\(A^TA\overline{x}=A^T\overline{b}\)</span> 的解; <span class="arithmatex">\(A^TA\overline{x}=A^T\overline{b}\)</span> 被称为 <span class="arithmatex">\(A\overline{x}=\overline{b}\)</span> 的 normal equation</li>
+<li>Let <span class="arithmatex">\(V=span(\overline{v}_1,\dots,\overline{v}_2)\in\mathbb{R}^n\)</span> and <span class="arithmatex">\(A=(\overline{v}_1,\dots,\overline{v}_2)\)</span>, 则<span class="arithmatex">\(V\)</span>的标准正交矩阵为<span class="arithmatex">\(A(A^TA)^{-1}A^T\)</span></li>
+</ul>
+</blockquote>
+<h3 id="correlation">Correlation 相关性</h3>
+<ul>
+<li>Let <span class="arithmatex">\(\overline{x},\overline{y}\in\mathbb{R}^n\)</span></li>
+<li>定义: There is positive correlation between <span class="arithmatex">\(\overline{x}\)</span> and <span class="arithmatex">\(\overline{y}\Leftrightarrow (\overline{x},\overline{y})&gt;0\)</span></li>
+<li>
+<p>定义: The correlation coefficient <span class="arithmatex">\(r\)</span> of <span class="arithmatex">\(\overline{x},\overline{y}\)</span> is</p>
+<div class="arithmatex">\[r=cos(\overline{x},\overline{y})=\frac{\overline{x},\overline{y}}{|\overline{x}||\overline{y}|}\in [-1,1]\]</div>
+</li>
+</ul>
+
+              
+
+<!-- 评论区模块(使用来必力支持), 默认开启, 在元数据中加上 comment:false 或者 comment: off 来去除。-->
+
+
+  <!-- 
+  <div id="lv-container" data-id="city" data-uid="MTAyMC81Njc4Mi8zMzI0Ng==">
+    <script type="text/javascript">
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+
+        if (typeof LivereTower === 'function') { return; }
+
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+    </script>
+  <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+  </div>
+   -->
+
+
+
+
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+
+    <nav class="md-footer__inner md-grid" aria-label="页脚">
+    
+        
+        <a href="../VE214/" class="md-footer__link md-footer__link--prev" aria-label="上一页: VE214介绍" rel="prev">
+        <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        </div>
+        <div class="md-footer__title">
+            <div class="md-ellipsis">
+            <span class="md-footer__direction">
+                上一页
+            </span>
+            VE214介绍
+            </div>
+        </div>
+        </a>
+    
+    
+        
+        <a href="../../VE311%E6%A8%A1%E6%8B%9F%E7%94%B5%E8%B7%AF/VE311/" class="md-footer__link md-footer__link--next" aria-label="下一页: VE311介绍" rel="next">
+        <div class="md-footer__title">
+            <div class="md-ellipsis">
+            <span class="md-footer__direction">
+                下一页
+            </span>
+            VE311介绍
+            </div>
+        </div>
+        <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+        </div>
+        </a>
+    
+    </nav>
+
+<div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid"style="display: block;margin: 0 auto">
+    <html>
+	<head>
+		<meta charset="UTF-8">
+		<title>底部链接</title>
+		<style>
+		.alt {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-content: center;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		</style>
+    </head>
+	<body>
+		<div class="footer">
+			<div class="alt">
+				<div class="foot">
+					<p>Contact Me</p>
+					<a href="https://space.bilibili.com/37810014" target="_blank">
+					<img src="https://s2.loli.net/2022/07/09/ZrNtDhM3P5dCvWH.png" alt="MyBilibili"/></img>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+ 
+</html>
+    <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+    
+    </div>
+</div>
+</footer>
+  
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.top", "navigation.tabs", {"navigation.hide": ["."]}, "search.highlight", "header.autohide"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.3a4b43e5.min.js"></script>
+      
+        <script src="../../assets/javascripts/mathjax.js"></script>
+      
+        <script src="../../assets/javascripts/shortcuts.js"></script>
+      
+    
+  </body>
+</html>

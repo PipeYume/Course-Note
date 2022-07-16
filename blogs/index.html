@@ -197,6 +197,7 @@
         
         
             
+            <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
             
                 
             
@@ -221,8 +222,10 @@
 
   
             
+
         
             
+            <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
             
                 
             
@@ -241,8 +244,10 @@
 
   
             
+
         
             
+            <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
             
                 
                     
@@ -250,8 +255,10 @@
             
 
             
+
         
             
+            <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
             
                 
                     
@@ -259,6 +266,18 @@
             
 
             
+
+        
+            
+            <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+            
+                
+                    
+                
+            
+
+            
+
         
     
     </ul>
@@ -304,10 +323,34 @@
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
+    <!-- jinja2 for循环作用域里set只能在for循环里用，所以创建一个namespace来让for循环外也能使用for循环里set的变量(在这里是hidenPrefix和isHiden) -->
     
-      
-      
-      
+            
+        
+            
+        
+            
+        
+            
+                
+            
+        
+            
+        
+            
+        
+        
+        
+          
+          <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+          
+              
+          
+
+          
+          
+          
+
 
   
   
@@ -323,10 +366,12 @@
       
       
       
+        
         <label class="md-nav__link" for="__nav_1">
           首页
           <span class="md-nav__icon md-icon"></span>
         </label>
+        
       
       <nav class="md-nav" aria-label="首页" data-md-level="1">
         <label class="md-nav__title" for="__nav_1">
@@ -392,10 +437,17 @@
     </li>
   
 
-    
-      
-      
-      
+        
+          
+          <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+          
+              
+          
+
+          
+          
+          
+
 
   
   
@@ -407,10 +459,19 @@
     </li>
   
 
-    
-      
-      
-      
+        
+          
+          <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+          
+              
+                  
+              
+          
+
+          
+          
+          
+
 
   
   
@@ -424,13 +485,78 @@
       
       
       
-        <label class="md-nav__link" for="__nav_3">
-          .VE311模拟电路
+        
+      
+      <nav class="md-nav" aria-label=".VE214离散数学" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
+          .VE214离散数学
         </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VE214%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/VE214/" class="md-nav__link">
+        VE214介绍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VE214%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/Orthogon/" class="md-nav__link">
+        Orthogon 正交
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+        
+          
+          <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+          
+              
+                  
+              
+          
+
+          
+          
+          
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        
       
       <nav class="md-nav" aria-label=".VE311模拟电路" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           .VE311模拟电路
         </label>
@@ -469,10 +595,19 @@
     </li>
   
 
-    
-      
-      
-      
+        
+          
+          <!-- 隐藏navigation.hide设定的特定前缀的条目 -->
+          
+              
+                  
+              
+          
+
+          
+          
+          
+
 
   
   
@@ -481,18 +616,15 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4">
-          .VE401概率论
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
       
       <nav class="md-nav" aria-label=".VE401概率论" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           .VE401概率论
         </label>
@@ -516,6 +648,8 @@
       </nav>
     </li>
   
+
+        
 
     
   </ul>
@@ -834,7 +968,7 @@
 <!-- 评论区模块(使用来必力支持), 默认开启, 在元数据中加上 comment:false 或者 comment: off 来去除。-->
 
 
-  
+  <!--  -->
 
 
 
@@ -937,16 +1071,14 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.top", "navigation.tabs", {"navigation.tabs.hide": ["."]}, "search.highlight", "header.autohide"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.top", "navigation.tabs", {"navigation.hide": ["."]}, "search.highlight", "header.autohide"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3a4b43e5.min.js"></script>
       
-        <script src="../assets/javascripts/shortcuts.js"></script>
-      
         <script src="../assets/javascripts/mathjax.js"></script>
       
-        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../assets/javascripts/shortcuts.js"></script>
       
     
   </body>
